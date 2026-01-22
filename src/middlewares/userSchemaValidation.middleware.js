@@ -18,7 +18,7 @@ const validateUserSchema = (req, res, next) => {
         }
         return next();
     } catch (error) {
-        return next(new ExpressError("Data validation falied", 400));
+        return next(new ExpressError("Data validation failed", 400));
     }
 }
 
